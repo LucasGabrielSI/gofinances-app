@@ -9,6 +9,7 @@ import {
   User,
   UserGreeting,
   UserName,
+  Icon
 } from './styles'
 
 export function Dashboard() {
@@ -19,10 +20,12 @@ export function Dashboard() {
           <UserInfo>
             <Photo source={{ uri: "https://avatars.githubusercontent.com/u/29556004?v=4" }} />
             <User>
-              <UserGreeting></UserGreeting>
+              <UserGreeting>Olá</UserGreeting>
               <UserName>Lucas Gabriel</UserName>
             </User>
-          </UserInfo>
+          </UserInfo> 
+
+          <Icon name="power"/>
         </UserWrapper>
       </Header>
     </Container>
