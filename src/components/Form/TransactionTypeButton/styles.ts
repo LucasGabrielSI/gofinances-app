@@ -20,7 +20,9 @@ export const Container = styled(TouchableOpacity)<ContainerProps>`
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  border: 1.5px solid ${ ({ theme }) => theme.colors.text }
+  border-width: ${ ({ isActive }) => isActive ? 0 : 1.5 }px; 
+  border-style: solid; 
+  border-color: ${ ({ theme }) => theme.colors.text };
 
   ${ ({ isActive, type }) => isActive && type === "up" && css`
     background-color: ${ ({ theme }) => theme.colors.Success_light };
