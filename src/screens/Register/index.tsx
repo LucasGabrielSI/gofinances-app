@@ -5,6 +5,7 @@ import { Button } from '../../components/Form/Button';
 import { 
   TransactionTypeButton 
 } from '../../components/Form/TransactionTypeButton';
+import { CategorySelect } from '../../components/Form/CategorySelect';
 
 import { 
   Container,
@@ -52,6 +53,8 @@ export function Register() {
               onPress={ () => handleTransactionTypeSelect("down") } 
             />
           </TransactionsTypes>
+
+          <CategorySelect title="Categoria"/>
         </Fields>
 
         <Button title="Enviar" />
